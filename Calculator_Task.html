@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Calculator</title> 
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link rel="stylesheet" href="Calculator_Task.css"> 
+       <script src="Calculator_Task.js"></script>      
+    </head>
+    <body class="table-secondary">
+         <h1><i>Calculator</i></h1>
+        <div class="jumbtron bg-dark">
+           
+             <form name="form1">
+                <input class="textview" id="txt" name="textview">
+             </form>>
+           
+             <div class="row">
+                <button class="btn1 table-info mt-2"  onclick = "insert(7)" >7</button>
+                <button class="btn1 table-info mt-2"  onclick = "insert(8)" >8</button>
+                <button class="btn1 table-info mt-2" onclick = "insert(9)" >9</button>
+                <button class="btn1 btn-success mt-2 calc-action-btn" onclick = "insert('+') " >+</button>
+             </div>
+             <div class="row">
+                <button class="btn1 btn-info mt-2" onclick = "insert(4) " >4</button>
+                <button class="btn1 btn-info mt-2" onclick = "insert(5)" >5</button>
+                <button class="btn1 btn-info mt-2" onclick = "insert(6)" >6</button>
+                <button class="btn1 table-success mt-2 calc-action-btn" onclick = "insert('-') " >-</button>
+             </div>
+             <div class="row">
+                <button class="btn1 btn-success mt-2" onclick = "insert(1) " >1</button>
+                <button class="btn1 btn-success mt-2" onclick = "insert(2)" >2</button>
+                <button class="btn1 btn-success mt-2" onclick = "insert(3) " >3</button>
+                <button class="btn1 btn-info  mt-2 calc-action-btn" onclick = "insert('/')" >/</button>
+             </div>
+             <div class="row">
+                <button class="btn1 btn-danger mt-2" onclick = "insert('0') " >0</button>
+                <button class="btn1 btn-danger mt-2" onclick = "insert('.')" >.</button>
+                <button class="btn1 table-danger mt-2 calc-action-btn" id="total" onclick="equal()">=</button>
+                <button class="btn1 table-info mt-2 calc-action-btn" onclick = "insert('*') " >*</button>
+             </div>
+             <button class="btn btn-secondary mt-2" id="clear"onclick="form1.textview.value=' '">C</button>
+             <button class="btn1 btn-danger mt-2 calc-action-btn" onclick = "insert('**')">^</button>
+            
+
+        </div>
+        
+    </body>
+</html>
